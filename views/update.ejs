@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Update Mongoose</title>
+</head>
+<body>
+    <div>
+    <a href="/">Home</a>
+    <form action="/mongooses/<%= mongoo._id %>" method="post">
+        <p>Mongoose Name: </p>
+        <input type="text" name="name" value="<%= mongoo.name %>">
+        <p>Favorite Food: </p>
+        <input type="text" name="food" value="<%= mongoo.food %>">
+        <button>Submit</button>
+    </form>
+    </div>
+</body>
+</html>
